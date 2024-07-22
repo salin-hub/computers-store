@@ -3,7 +3,7 @@
       <div class="footer">
         <div class="social_bar">
           <div class="logo_shop">
-            <img src="../assets/image/Logo.png" alt="">
+            <img src="../assets/image/logo.png" alt="">
           </div>
           <div class="social_icon">
             <ul>
