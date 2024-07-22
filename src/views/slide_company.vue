@@ -16,10 +16,10 @@ import image2 from "../assets/image/logo_asus.jpg"
 import image3 from "../assets/image/apple_logo.jpg"
 import image4 from "../assets/image/hp_logo.jpg"
 import image5 from "../assets/image/lenovo_logo.png"
-import image6 from "../assets/image/acer-logo.jpg"
-import image7 from "../assets/image/xiaomi-logo.png"
+import image6 from "../assets/image/acer_logo.jpg"
+import image7 from "../assets/image/xiaomi_logo.png"
 import "../assets/home.css"
-import image8 from "../assets/image/msi-logo.jpg"
+import image8 from "../assets/image/msi_logo.jpg"
 
 export default {
   data() {
