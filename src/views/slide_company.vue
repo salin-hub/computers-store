@@ -18,7 +18,6 @@ import image4 from "../assets/image/hp_logo.jpg"
 import image5 from "../assets/image/lenovo_logo.png"
 import image6 from "../assets/image/Acer-logo.jpg"
 import "../assets/home.css"
-import image8 from "../assets/image/MSI-logo.jpg"
 
 export default {
   data() {
