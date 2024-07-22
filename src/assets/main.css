@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&family=PT+Serif:wght@700&family=Roboto+Condensed&display=swap');
+
+@import './base.css';
+@import './navbar.css';
+@import './ForMobile//navbar.css';
+@import './slider.css';
+@import './home.css';
+@import './account.css';
+@import './validation.css';
+@import './shipping.css';
+@import './viewproduct.css';
+@import './search.css';
+@import './footer.css';
+@import './favorite.css';
+a,
+.green {
+  text-decoration: none;
+  color: rgb(76, 76, 79);
+  transition: 0.4s;
+}
+
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

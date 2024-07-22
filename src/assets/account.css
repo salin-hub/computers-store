@@ -1,0 +1,48 @@
+.card_member{
+    left: -2rem;
+    top: 3.2rem;
+    background-color: var(--color-navbar);
+    position: absolute;
+    padding: 1rem;
+    border-radius: .2rem;
+}
+.item_user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+.item_user a{
+    color: var(--color-text);
+    font-size: 1rem;
+}
+.item_user h5{
+    color: var(--color-text);
+}
+.item_user a:hover{
+    color:var(--color-blue);
+}
+.btn{
+    width: 7rem;
+    transition: .3s linear;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+.full{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+@media (max-width: 770px) {
+    .card_member{
+        top: 3rem;
+        left: -3rem;
+    }
+    
+}
