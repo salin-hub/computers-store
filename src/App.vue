@@ -1,4 +1,3 @@
-
 <template>
   <div class="wrapper" ref="wrapper">
     <div class="menubar" @click="toggleNav" :class="{ active: showNav }">
@@ -14,7 +13,7 @@
     </navbar>
     <div class="logo">
       <RouterLink to="/">
-        <img src="@/assets/image/logo.png" alt="">
+        <img src="@/assets/image/logo.png" alt="logo">
       </RouterLink>
     </div>
     <nav ref="menubar">
@@ -29,7 +28,6 @@
       <span @click="shipping"><i class="fa-solid fa-cart-shopping"></i><sup>{{ itemCount }}</sup></span>
       <span><i @click="acount_profile()" class="fa-solid fa-user">
           <div v-if="Account">
-
             <div v-if="!isLoggedInFromStorage">
               <div class="card_member">
                 <div class="item_user">
@@ -53,12 +51,11 @@
     </div>
   </div>
   <transition name="fade">
-    <router-view>
-      
-    </router-view>
+    <router-view></router-view>
   </transition>
   <footer_page />
 </template>
+
 <script>
 import footer_page from './views/footer_page.vue'
 import axios from 'axios';
@@ -107,21 +104,18 @@ export default {
       this.showNav = !this.showNav;
     },
     closeNavOnClick(event) {
-
-    if (!event || !event.target || !this.$refs.wrapper || !this.$refs.menubar) {
+      if (!event || !event.target || !this.$refs.wrapper || !this.$refs.menubar) {
         console.error('Error in closeNavOnClick: Event, event.target, wrapper, or menubar is undefined.');
         return;
-    }
-    
-    if (!this.$refs.wrapper.contains(event.target) && !this.$refs.menubar.contains(event.target)) {
-        this.showNav = false;
-    }
-},
+      }
 
+      if (!this.$refs.wrapper.contains(event.target) && !this.$refs.menubar.contains(event.target)) {
+        this.showNav = false;
+      }
+    },
     closeNavOnScroll() {
       this.showNav = false;
     },
-
     async fetchUserRole() {
       try {
         const response = await axios.get(`${API_BASE_URL}/user/${this.userId}`);
@@ -133,11 +127,9 @@ export default {
         console.error('Error fetching user role:', error.response.data.user);
       }
     },
-
     acount_profile() {
       this.Account = !this.Account;
     },
-
     handleLogout() {
       this.$store.dispatch('handleLogout')
         .catch(error => {
@@ -153,6 +145,3 @@ export default {
   },
 };
 </script>
-
-
-
