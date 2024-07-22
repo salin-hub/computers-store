@@ -13,7 +13,7 @@
     </navbar>
     <div class="logo">
       <RouterLink to="/">
-        <img src="./assets/image/Logo.png" alt="logo">
+        <img src="./assets/image/logo.png" alt="logo">
       </RouterLink>
     </div>
     <nav ref="menubar">
